@@ -57,45 +57,45 @@ to ensure that the drive image was not altered in any while while it was being a
 Macintosh Word.
 
 ## Firefox Data
-Browsing on 2015-6-30:
-	08:04:42 - search for pitchfork
-	08:05:17 + 08:05:29 - on pitchfork.com
-	08:11:54 - search for pitchfork
-	08:11:57 - 08:13:33 - on pitchfork.com
-	08:13:46 - search for stereogum
-	08:13:57 + 08:14:27 - on stereogum.com
-	08:14:39 - search for Spotify
-	08:14:46 + 08:15:01 - on spotify.imusic-go.com
-	08:15:54 - on spotify.com
-	08:16:22 - on stereogum.com
-	08:16:22 - 08:16:45 - quickconnect redirects to stereogum.com
-	08:16:47 - 08:18:02 - on spotify.com/us/signup
-	08:18:04 - 08:18:09 - on spotify.com/us/download and download.spotify.com
-	08:20:46 - 08:21:02 - on play.spotify.com
-	08:25:31 - 08:29:14 - on stereogum.com
+- Browsing on 2015-6-30:
+	- 08:04:42 - search for pitchfork
+	- 08:05:17 + 08:05:29 - on pitchfork.com
+	- 08:11:54 - search for pitchfork
+	- 08:11:57 - 08:13:33 - on pitchfork.com
+	- 08:13:46 - search for stereogum
+	- 08:13:57 + 08:14:27 - on stereogum.com
+	- 08:14:39 - search for Spotify
+	- 08:14:46 + 08:15:01 - on spotify.imusic-go.com
+	- 08:15:54 - on spotify.com
+	- 08:16:22 - on stereogum.com
+	- 08:16:22 - 08:16:45 - quickconnect redirects to stereogum.com
+	- 08:16:47 - 08:18:02 - on spotify.com/us/signup
+	- 08:18:04 - 08:18:09 - on spotify.com/us/download and download.spotify.com
+	- 08:20:46 - 08:21:02 - on play.spotify.com
+	- 08:25:31 - 08:29:14 - on stereogum.com
 
-Cookies data on 2015-6-30:
-	08:05:26 - google wallet
-	08:13:41 - newhive (social media)
-	08:14:27 - stereogum
-	08:16:09 - pitchfork
-	08:17:07 - spotify
-	08:22:02 - pitchfork
-	08:22:16 - spotify
-	08:23:20 - pitchfork
-	08:24:00 - adobe
-	08:24:09 - spotify
-	08:24:13 - pitchfork
-	08:24:36 - play.spotify
-	08:27:11 - youtube
-	08:27:34 - twitter
-	08:27:51 - bandcamp
-	08:29:24 - stereogum
-	08:30:09 - stereogum
+- Cookies data on 2015-6-30:
+	- 08:05:26 - google wallet
+	- 08:13:41 - newhive (social media)
+	- 08:14:27 - stereogum
+	- 08:16:09 - pitchfork
+	- 08:17:07 - spotify
+	- 08:22:02 - pitchfork
+	- 08:22:16 - spotify
+	- 08:23:20 - pitchfork
+	- 08:24:00 - adobe
+	- 08:24:09 - spotify
+	- 08:24:13 - pitchfork
+	- 08:24:36 - play.spotify
+	- 08:27:11 - youtube
+	- 08:27:34 - twitter
+	- 08:27:51 - bandcamp
+	- 08:29:24 - stereogum
+	- 08:30:09 - stereogum
 
-Searchbar history on 2015-6-30:
-	08:11:52 - "pitchfork"
-    08:15:50 - "spotify"
+- Searchbar history on 2015-6-30:
+	- 08:11:52 - "pitchfork"
+    - 08:15:50 - "spotify"
 
 # Conclusions
 My finding show that Kevin's computer was used to browse the internet and stream music during

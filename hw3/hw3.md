@@ -1,5 +1,9 @@
 # Summary
-
+This report invesitgates a thumb drive owned by Jenny Card who is is Chicago polic 
+custody for selling fraudulent gift cards. The drive was formatted which required
+file carving to recover the deleted files. Many photos were found placing Card in a 
+shopping complex in Chicago and many of the photos were of gift cards, either online or 
+in the store.
 
 # Purpose
 This investigation's purpose was to examine Jenny Card's thumb drive for evidence linking
@@ -43,6 +47,7 @@ value for `count` is 0x17b200a - 0x16ffd90 in decimal.
 ```
 
 The output image:
+
 ![image.jpg](./image.jpg)
 
 To save on time I continued using file carving tools rather than carving manually. 
@@ -161,6 +166,6 @@ Some photos were images of gift cards that could be gotten off the internet:
 - 00150328.jpg 
 
 # Conclusions
-
-
-
+The findings place Card in a large shopping center in Chicago. Many of the photos on the 
+drive were of gift cards, either taken in person or taken off the internet. 
+Both of these things suggest that Card was selling fraudulent gift cards out of Chicago. 

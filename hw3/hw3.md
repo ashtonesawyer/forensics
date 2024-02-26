@@ -8,7 +8,7 @@ her with the sale of fraudulent gift cards from several retail stores in Chicago
 # Methodology
 I started by using `kpartx` and `mount` to mount the image of the thumb drive. 
 
-```bash
+```
  $ sudo kpartx -av fsf.dd
 add map loop0p1 (252:0): 0 409600 linear 7:0 40
 add map loop0p2 (252:1): 0 15538176 linear 7:0 411648
@@ -25,7 +25,7 @@ and carve it out manually using `dd`. `dd` requires that the offsets and sizes a
 decimal rather than hexadecimal, so the value for `skip` is 0x16ffd90 in decimal, and the 
 value for `count` is 0x17b200a - 0x16ffd90 in decimal.
 
-```bash
+```
  $ xxd fsf.dd | grep "ffd8 ffe0"
 0167f000: ffd8 ffe0 0010 4a46 4946 0001 0100 0001  ......JFIF......
 0187e000: ffd8 ffe0 0010 4a46 4946 0001 0100 0001  ......JFIF......
@@ -48,7 +48,7 @@ The output image:
 To save on time I continued using file carving tools rather than carving manually. 
 The first tool that I used was `foremost` which I used to search for JPEGs, GIFs, and PDFs. 
 
-```bash
+```
  $ foremost -T -t jpg,gif,pdf -i fsf.dd
 Processing: fsf.dd
 |******************************************************************************|
@@ -80,7 +80,7 @@ deemed them irrelevant.
 The other file carving tool that I used was `photorec` which has a text-based interface to 
 select the options.
 
-```bash
+```
  $ photorec fsf.dd
  > [Proceed]
  > 2 P MS Data
@@ -105,7 +105,7 @@ Unfortunately none of the files recovered by `photorec` were relevant to the inv
 The JPEGs recovered using `foremost` were of the most interest to the investigation so I 
 continued by examining them. Some of the photos had GPS data.
 
-```bash
+```
  $ exiftool output_Sun*/jpg/*.jpg | grep "GPS Position"
 GPS Position                    : 41 deg 50' 57.30" N, 87 deg 57' 14.13" W
 GPS Position                    : 41 deg 50' 57.59" N, 87 deg 57' 17.21" W
@@ -121,8 +121,9 @@ it and generate an HTML file (`index.html`) to display it.
 Basic Usage:
  python3 plot.py [baseDirectory]
 
-'baseDirectory' is an option argument, if left blank the script will use the current 
-working directory. When specifying a directory, don't forget the trailing '\'
+'baseDirectory' is an option argument, if left blank the script will use 
+the current working directory. When specifying a directory, don't forget 
+the trailing '\'
 ```
 
 # Findings
@@ -131,33 +132,33 @@ They were either photos of the outside of various stores or photos of the gift c
 in the given location. 
 
 There were also many photos of single gift cards or e-gift cards:
-	- 00149432.jpg
-	- 00149488.jpg
-	- 00149504.jpg
-	- 00149536.jpg
-	- 00149560.jpg
-	- 00149616.jpg
-	- 00149640.jpg
-	- 00149680.jpg
-	- 00149696.jpg
-	- 00149720.jpg
-	- 00149776.jpg
-	- 00149792.jpg
-	- 00149960.jpg
-	- 00149976.jpg
-	- 00149992.jpg
-	- 00150016.jpg
-	- 00150168.jpg
-    - 00150192.jpg
-    - 00150208.jpg
-    - 00150232.jpg
-    - 00150352.jpg
-    - 00150376.jpg
+- 00149432.jpg
+- 00149488.jpg
+- 00149504.jpg
+- 00149536.jpg
+- 00149560.jpg
+- 00149616.jpg
+- 00149640.jpg
+- 00149680.jpg
+- 00149696.jpg
+- 00149720.jpg
+- 00149776.jpg
+- 00149792.jpg
+- 00149960.jpg
+- 00149976.jpg
+- 00149992.jpg
+- 00150016.jpg
+- 00150168.jpg
+- 00150192.jpg
+- 00150208.jpg
+- 00150232.jpg
+- 00150352.jpg
+- 00150376.jpg
 
 Some photos were images of gift cards that could be gotten off the internet:
-	- 00149592.jpg 
-	- 00150120.jpg
-	- 00150328.jpg 
+- 00149592.jpg 
+- 00150120.jpg
+- 00150328.jpg 
 
 # Conclusions
 
